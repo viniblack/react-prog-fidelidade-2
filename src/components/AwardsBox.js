@@ -2,8 +2,13 @@
 /* eslint-disable react/react-in-jsx-scope */
 import React from 'react';
 
-import { AwardsText, Main, ButtonSearch } from '../styles/awards';
+import {
+  AwardsText,
+  Main,
+  ButtonSearch,
+} from '../styles/awards';
 import Search from '../assets/img/search.svg';
+import RedemptionAwards from './RedemptionAwards';
 
 const Awards = () => (
   <Main>
@@ -14,6 +19,9 @@ const Awards = () => (
       </div>
     </form>
     <AwardsText>Prêmios</AwardsText>
+    <RedemptionAwards />
+    <RedemptionAwards />
+    <RedemptionAwards />
   </Main>
 );
 

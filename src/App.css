@@ -1,3 +1,4 @@
+/* Elementos bases */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -9,7 +10,8 @@
   font-family: Noto Sans;
   font-size: 100%;
 
-  --color-background: #9c9ca1;
+  --color-background: #dddde2;
+  --color-background-box: #9c9ca1;
   --color-title-nav: #E53935;
 
 }
@@ -26,29 +28,24 @@ body,
 
 }
 
-.Close{
+
+/* Header */
+
+.banner {
+  width: 100%;
+
+}
+
+.close {
   height: 15px;
 
 }
 
-.Banner {
-  width: 100%;
 
-}
-
-#search {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  position: absolute;
-
-  top: 8.5rem;
-  width: 100%;
-
-}
+/* Awards Box */
 
 .bt-search {
-  height: 15px;
+  height: 1.3rem;
 
 }
 
@@ -58,7 +55,18 @@ body,
   display: flex;
 
   width: 80%;
- 
+
+}
+
+#search {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+
+  top: 8rem;
+  width: 100%;
+
 }
 
 #subject {
@@ -68,7 +76,7 @@ body,
   border: none;
   border-radius: 7px 0 0 7px;
   box-shadow: 4.2px 4.2px #3b3b3b;
-  padding: .32rem;
+  padding: .50rem;
   padding-left: 10px;
   width: 25rem;
 
@@ -80,14 +88,44 @@ body,
 
 }
 
+/* RedemptionAwards */
+
+.awards-box-text {
+  display: grid;
+  line-height: 1.3;
+  font-weight: bold;
+
+  font-size: 1rem;
+}
+
+.awards-box-price {
+  display: grid;
+  line-height: 1.3;
+  font-weight: bold;
+  color: red;
+  flex-grow: 1;
+  font-size: 1rem;
+  grid-template-columns: 1fr auto;
+  margin-bottom: .5rem;
+
+}
+
+/* Media queries */
 @media (min-width: 350px) {
   #search {
-    top: 9.3rem;
+    top: 9rem;
 
   }
+
 }
 
 @media (min-width: 400px) {
+
+  .bt-search {
+    height: 1rem;
+
+  }
+
   #search {
     top: 10rem;
 
@@ -100,19 +138,61 @@ body,
 }
 
 @media (min-width: 500px) {
+
   .Banner {
     height: 15rem;
 
   }
 
+  .bt-search {
+    height: 1.3rem;
+
+  }
+
   #subject {
+    padding: .7rem;
     width: 80rem;
     box-shadow: 5px 5px #3b3b3b;
 
   }
 
   #search {
-    top: 17.5rem;
+    top: 15.6rem;
+
+  }
+
+  @media (min-width: 1000px) {
+    #search {
+      top: 20rem;
+
+    }
+
+  }
+
+  @media (min-width: 1400px) {
+
+    .bt-search {
+      height: 1rem;
+
+    }
+
+    #search {
+      top: 27.5rem;
+
+    }
+
+    #subject {
+      padding: 1rem;
+
+    }
+
+  }
+
+  @media (min-width: 2500px) {
+    #search {
+      top: 47rem;
+
+    }
 
   }
 }

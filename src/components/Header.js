@@ -14,9 +14,9 @@ const Header = () => (
   <>
     <Nav>
       <Title>Nome do programa de fidelidade</Title>
-      <Button><img className="Close" src={Close} alt="Close" /></Button>
+      <Button><img className="close" src={Close} alt="Close" /></Button>
     </Nav>
-    <img className="Banner" src={Banner} alt="banner" />
+    <img className="banner" src={Banner} alt="banner" />
   </>
 );
 
