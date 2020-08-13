@@ -27,27 +27,6 @@ const Awards = () => (
       <RedemptionAwards />
       <RedemptionAwards />
       <RedemptionAwards />
-      <RedemptionAwards />
-      <RedemptionAwards />
-      <RedemptionAwards />
-      <RedemptionAwards />
-      <RedemptionAwards />
-      <RedemptionAwards />
-      <RedemptionAwards />
-      <RedemptionAwards />
-      <RedemptionAwards />
-      <RedemptionAwards />
-      <RedemptionAwards />
-      <RedemptionAwards />
-      <RedemptionAwards />
-      <RedemptionAwards />
-      <RedemptionAwards />
-      <RedemptionAwards />
-      <RedemptionAwards />
-      <RedemptionAwards />
-      <RedemptionAwards />
-      <RedemptionAwards />
-      <RedemptionAwards />
     </BoxAll>
   </Main>
 );
