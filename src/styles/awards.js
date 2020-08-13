@@ -8,6 +8,12 @@ export const Main = styled.div`
 
 `;
 
+export const BoxAll = styled.div`
+    margin: 10px;
+    box-shadow: 19px 15px 50px 10px #a5a5a5;
+    border-radius: 19px;
+`;
+
 export const ButtonSearch = styled.button`
   background-color: var(--color-title-nav);
   border: none;
@@ -15,7 +21,7 @@ export const ButtonSearch = styled.button`
   padding: .2rem;
 
   border-radius: 0 7px 7px 0 ;
-  box-shadow: 4px 4px #3b3b3b;
+  box-shadow: 4px 4px var(--color-box-shadow);
   
   
   @media (min-width: 400px) {
@@ -26,13 +32,13 @@ export const ButtonSearch = styled.button`
 
   }
   
-  @media (min-width: 500px) {
-    box-shadow: 5px 5px #3b3b3b;
+  @media (min-width: 700px) {
+    box-shadow: 5px 5px var(--color-box-shadow);
 
   }
 
   @media (min-width: 1400px) {
-    box-shadow: 4px 5px #3b3b3b;
+    box-shadow: 4px 5px var(--color-box-shadow);
     padding: .89rem;
 
   }

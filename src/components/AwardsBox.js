@@ -6,6 +6,7 @@ import {
   AwardsText,
   Main,
   ButtonSearch,
+  BoxAll,
 } from '../styles/awards';
 import Search from '../assets/img/search.svg';
 import RedemptionAwards from './RedemptionAwards';
@@ -18,10 +19,36 @@ const Awards = () => (
         <ButtonSearch><img className="bt-search" src={Search} alt="Close" /></ButtonSearch>
       </div>
     </form>
-    <AwardsText>Prêmios</AwardsText>
-    <RedemptionAwards />
-    <RedemptionAwards />
-    <RedemptionAwards />
+    <AwardsText> </AwardsText>
+    <BoxAll>
+      <RedemptionAwards />
+      <RedemptionAwards />
+      <RedemptionAwards />
+      <RedemptionAwards />
+      <RedemptionAwards />
+      <RedemptionAwards />
+      <RedemptionAwards />
+      <RedemptionAwards />
+      <RedemptionAwards />
+      <RedemptionAwards />
+      <RedemptionAwards />
+      <RedemptionAwards />
+      <RedemptionAwards />
+      <RedemptionAwards />
+      <RedemptionAwards />
+      <RedemptionAwards />
+      <RedemptionAwards />
+      <RedemptionAwards />
+      <RedemptionAwards />
+      <RedemptionAwards />
+      <RedemptionAwards />
+      <RedemptionAwards />
+      <RedemptionAwards />
+      <RedemptionAwards />
+      <RedemptionAwards />
+      <RedemptionAwards />
+      <RedemptionAwards />
+    </BoxAll>
   </Main>
 );
 

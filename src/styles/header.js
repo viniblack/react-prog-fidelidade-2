@@ -7,6 +7,13 @@ export const Nav = styled.nav`
   display: grid;
   grid-template-columns: 1fr auto;
   justify-content: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 7;
+  
+
 
   background-color: var(--color-title-nav);
   border-radius: 10px 10px 0 0 ;
@@ -17,7 +24,7 @@ export const Nav = styled.nav`
 export const Title = styled.h2`
   font-family: Heebo;
   text-justify:inherit;
-
+  color: #fff;
   font-size: 1rem;
   margin-left: .3rem;
 
