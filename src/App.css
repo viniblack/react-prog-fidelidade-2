@@ -114,6 +114,11 @@ body,
 
 }
 
+.button-rescue {
+  color: red;
+  background: yellow;
+}
+
 /* Media queries */
 @media (min-width: 350px) {
   #search {
@@ -214,7 +219,4 @@ body,
 
 }
 
-.teste {
-
-
-}
+.teste {}
