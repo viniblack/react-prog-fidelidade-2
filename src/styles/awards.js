@@ -1,11 +1,10 @@
-/* eslint-disable linebreak-style */
-// eslint-disable-next-line import/prefer-default-export
 import styled from 'styled-components';
 
 export const Main = styled.div`
   align-items: center;
   justify-content: center;
 
+  padding-bottom: 2rem;
 `;
 
 export const BoxAll = styled.div`

@@ -24,11 +24,14 @@ body,
   justify-content: center;
 
   background: var(--color-background);
-  border-radius: 10px 10px;
+  border-radius: 10px;
   height: 100vh;
-  
+
 }
 
+.teste {
+  color: black;
+}
 
 /* Header */
 
@@ -204,4 +207,14 @@ body,
     }
 
   }
+}
+
+.Mui-selected {
+  color: black !important;
+
+}
+
+.teste {
+
+
 }

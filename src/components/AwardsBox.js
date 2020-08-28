@@ -1,5 +1,3 @@
-/* eslint-disable linebreak-style */
-/* eslint-disable react/react-in-jsx-scope */
 import React from 'react';
 
 import {
@@ -10,6 +8,7 @@ import {
 } from '../styles/awards';
 import Search from '../assets/img/search.svg';
 import RedemptionAwards from './RedemptionAwards';
+import Navigation from './Navigation';
 
 const Awards = () => (
   <Main>
@@ -28,6 +27,7 @@ const Awards = () => (
       <RedemptionAwards />
       <RedemptionAwards />
     </BoxAll>
+    <Navigation />
   </Main>
 );
 
