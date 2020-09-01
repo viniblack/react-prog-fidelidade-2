@@ -15,19 +15,19 @@ import MenuItem from '@material-ui/core/MenuItem';
 import Menu from '@material-ui/core/Menu';
 
 const useStyles = makeStyles({
-  root: {
-    backgroundColor: 'var(--color-title-nav)',
 
+  nav: {
+    backgroundColor: 'var(--color-title-nav)',
     position: 'fixed',
+    width: '100%',
     bottom: 0,
     'border-radius': '0 0 10px 10px',
-
   },
 
   textBt: {
-    color: 'white',
-    width: 1,
-    'font-size': '1px',
+    /*  color: 'white',
+     width: 1,
+     'font-size': '1px', */
 
   },
   selecionado: {
@@ -36,11 +36,12 @@ const useStyles = makeStyles({
 
   padao: {
     marginRight: 5,
+    color: 'white',
+    width: 1,
+    'font-size': '1px',
   },
-  selecionadoSubMenu: {
-    color: 'red',
+  teste: {
     backgroundColor: 'red',
-
   },
 
 });
@@ -59,6 +60,17 @@ export default function SimpleBottomNavigation() {
     setAnchorEl(null);
   };
 
+  const windowWidth = window.innerWidth;
+  let classMenu = 'visivel';
+  if (windowWidth <= 400) {
+    classMenu = ' invisivel';
+  }
+
+  let classOutros = 'visivel';
+  if (windowWidth >= 400) {
+    classOutros = ' invisivel';
+  }
+
   return (
 
     <BottomNavigation
@@ -67,7 +79,7 @@ export default function SimpleBottomNavigation() {
         setValue(newValue);
       }}
       showLabels
-      className={classes.root}
+      classes={{ root: classes.nav }}
     >
       <BottomNavigationAction
         label="Prêmio"
@@ -82,7 +94,6 @@ export default function SimpleBottomNavigation() {
         label="Extrato"
         value="folder"
         icon={<ReceiptIcon fontSize="small" />}
-        className={classes.textBt}
         classes={{
           root: classes.padao,
         }}
@@ -90,7 +101,6 @@ export default function SimpleBottomNavigation() {
       <BottomNavigationAction
         label="Busca"
         icon={<SearchIcon fontSize="small" />}
-        className={classes.textBt}
         classes={{
           root: classes.padao,
         }}
@@ -98,7 +108,7 @@ export default function SimpleBottomNavigation() {
       <BottomNavigationAction
         label="Desafios"
         icon={<SportsEsportsIcon fontSize="small" />}
-        className={classes.textBt}
+        className={classMenu}
         classes={{
           root: classes.padao,
         }}
@@ -106,14 +116,12 @@ export default function SimpleBottomNavigation() {
       <BottomNavigationAction
         label="Outros"
         icon={<MoreHorizIcon fontSize="small" />}
-        className={classes.textBt}
-        classes={{
-          root: classes.padao,
-        }}
-
         aria-controls="simple-menu"
         aria-haspopup="true"
         onClick={handleClick}
+        classes={{
+          root: classes.padao,
+        }}
 
       />
 
@@ -135,6 +143,8 @@ export default function SimpleBottomNavigation() {
         open={Boolean(anchorEl)}
         onClose={handleClose}
       >
+        <MenuItem onClick={handleClose} className={classOutros}>Desafios</MenuItem>
+        <MenuItem onClick={handleClose}>Como funciona</MenuItem>
         <MenuItem
           onClick={handleClose}
           classes={{ selected: classes.selecionadoSubMenu }}
@@ -143,7 +153,6 @@ export default function SimpleBottomNavigation() {
         </MenuItem>
         <MenuItem onClick={handleClose}>Termos de uso</MenuItem>
         <MenuItem onClick={handleClose}>By Fidelizar Mais</MenuItem>
-        <MenuItem onClick={handleClose}>Como funciona</MenuItem>
       </Menu>
     </BottomNavigation>
   );
