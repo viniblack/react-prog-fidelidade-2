@@ -1,14 +1,14 @@
 import React from 'react';
-
 import {
   AwardsText,
-  Main,
   ButtonSearch,
   BoxAll,
+  Main,
 } from '../styles/awards';
-import Search from '../assets/img/search.svg';
 import RedemptionAwards from './RedemptionAwards';
-import Navigation from './Navigation';
+import Search from '../assets/img/search.svg';
+
+import '../styles/awards-box.css';
 
 const Awards = () => (
   <Main>
@@ -27,7 +27,6 @@ const Awards = () => (
       <RedemptionAwards />
       <RedemptionAwards />
     </BoxAll>
-    <Navigation />
   </Main>
 );
 

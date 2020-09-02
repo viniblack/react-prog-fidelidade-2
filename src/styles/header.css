@@ -1,0 +1,19 @@
+/* Header */
+
+.banner {
+  width: 100%;
+  margin-top: calc(1rem + 2.5rem);
+}
+
+.close {
+  height: 15px;
+
+}
+
+@media (min-width: 500px) {
+
+  .Banner {
+    height: 15rem;
+
+  }
+}

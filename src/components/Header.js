@@ -1,14 +1,14 @@
-/* eslint-disable linebreak-style */
-/* eslint-disable react/react-in-jsx-scope */
 import React from 'react';
 
 import {
-  Title, Nav, Button,
+  Button,
+  Nav,
+  Title,
 } from '../styles/header';
 import Banner from '../assets/img/banner2.png';
 import Close from '../assets/img/close.svg';
 
-import '../App.css';
+import '../styles/header.css';
 
 const Header = () => (
   <>

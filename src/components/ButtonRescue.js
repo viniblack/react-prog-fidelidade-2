@@ -19,13 +19,28 @@ const useStyles = makeStyles({
   },
   rescue: {
     width: '100%',
+    background: 'var(--color-title-nav)',
+  },
+  confirm: {
+    color: 'white',
+    background: '#05ed14',
+  },
+  cancel: {
+    color: 'white',
+    background: '#e81010',
+  },
+  dialogText: {
+    color: '#000000d1',
   },
 
 });
 
 function PaperComponent(props) {
   return (
-    <Draggable handle="#draggable-dialog-title" cancel={'[class*="MuiDialogContent-root"]'}>
+    <Draggable
+      handle="#draggable-dialog-title"
+      cancel={'[class*="MuiDialogContent-root"]'}
+    >
       <Paper {...props} />
     </Draggable>
   );
@@ -63,20 +78,38 @@ export default function DraggableDialog() {
         aria-labelledby="draggable-dialog-title"
         classes={{ container: classes.redemptionAward }}
       >
-        <DialogTitle style={{ cursor: 'move' }} id="draggable-dialog-title">
+        <DialogTitle
+          id="draggable-dialog-title"
+          style={{ cursor: 'move' }}
+        >
           Confirme seu resgate
         </DialogTitle>
         <DialogContent>
-          <DialogContentText>
-            Para confirmar o resgate deste prêmio: Cupom de 5 reais de desconto,
-            clique em Confirmar.
+          <DialogContentText color="primary" classes={{ root: classes.dialogText }}>
+            Para confirmar o resgate deste prêmio:
+            <b> Cupom de 5 reais de desconto, </b>
+            clique em
+            <b> Confirmar.</b>
           </DialogContentText>
         </DialogContent>
         <DialogActions>
-          <Button autoFocus onClick={handleClose} color="secondary">
+          <Button
+            autoFocus
+            classes={{
+              textSecondary: classes.cancel,
+            }}
+            color="secondary"
+            onClick={handleClose}
+          >
             Cancelar
           </Button>
-          <Button onClick={handleClose} color="primary">
+          <Button
+            classes={{
+              textPrimary: classes.confirm,
+            }}
+            color="primary"
+            onClick={handleClose}
+          >
             Confirmar
           </Button>
         </DialogActions>

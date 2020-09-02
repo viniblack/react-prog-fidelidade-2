@@ -1,47 +1,44 @@
 import React from 'react';
 import {
-  makeStyles,
   BottomNavigation,
   BottomNavigationAction,
+  makeStyles,
 
 } from '@material-ui/core';
-import SportsEsportsIcon from '@material-ui/icons/SportsEsports';
-import ReceiptIcon from '@material-ui/icons/Receipt';
 import CardGiftcardIcon from '@material-ui/icons/CardGiftcard';
 import MoreHorizIcon from '@material-ui/icons/MoreHoriz';
+import ReceiptIcon from '@material-ui/icons/Receipt';
 import SearchIcon from '@material-ui/icons/Search';
+import SportsEsportsIcon from '@material-ui/icons/SportsEsports';
 
-import MenuItem from '@material-ui/core/MenuItem';
 import Menu from '@material-ui/core/Menu';
+import MenuItem from '@material-ui/core/MenuItem';
+
+import '../styles/navigation.css';
 
 const useStyles = makeStyles({
 
   nav: {
     backgroundColor: 'var(--color-title-nav)',
-    position: 'fixed',
-    width: '100%',
     bottom: 0,
     'border-radius': '0 0 10px 10px',
+    position: 'fixed',
+    width: '100%',
   },
 
-  textBt: {
-    /*  color: 'white',
-     width: 1,
-     'font-size': '1px', */
-
+  padao: {
+    color: 'white',
+    marginRight: 5,
+    width: 1,
+    'font-size': '1px',
   },
+
   selecionado: {
     color: 'black',
   },
 
-  padao: {
-    marginRight: 5,
-    color: 'white',
-    width: 1,
-    'font-size': '1px',
-  },
-  teste: {
-    backgroundColor: 'red',
+  ativo: {
+    color: 'black',
   },
 
 });
@@ -61,6 +58,7 @@ export default function SimpleBottomNavigation() {
   };
 
   const windowWidth = window.innerWidth;
+
   let classMenu = 'visivel';
   if (windowWidth <= 400) {
     classMenu = ' invisivel';
@@ -72,7 +70,6 @@ export default function SimpleBottomNavigation() {
   }
 
   return (
-
     <BottomNavigation
       value={value}
       onChange={(event, newValue) => {
@@ -83,53 +80,55 @@ export default function SimpleBottomNavigation() {
     >
       <BottomNavigationAction
         label="Prêmio"
-        icon={<CardGiftcardIcon fontSize="small" />}
         className={classes.textBt}
         classes={{
-          selected: classes.selecionado,
           root: classes.padao,
+          selected: classes.selecionado,
         }}
+        icon={<CardGiftcardIcon fontSize="small" />}
       />
       <BottomNavigationAction
         label="Extrato"
-        value="folder"
-        icon={<ReceiptIcon fontSize="small" />}
         classes={{
           root: classes.padao,
+          selected: classes.selecionado,
         }}
+        icon={<ReceiptIcon fontSize="small" />}
       />
       <BottomNavigationAction
         label="Busca"
-        icon={<SearchIcon fontSize="small" />}
         classes={{
           root: classes.padao,
+          selected: classes.selecionado,
         }}
+        icon={<SearchIcon fontSize="small" />}
       />
       <BottomNavigationAction
         label="Desafios"
-        icon={<SportsEsportsIcon fontSize="small" />}
         className={classMenu}
         classes={{
           root: classes.padao,
+          selected: classes.selecionado,
         }}
+        icon={<SportsEsportsIcon fontSize="small" />}
       />
       <BottomNavigationAction
         label="Outros"
-        icon={<MoreHorizIcon fontSize="small" />}
+        classes={{
+          root: classes.padao,
+          selected: classes.selecionado,
+          colorAction: classes.ativo,
+        }}
         aria-controls="simple-menu"
         aria-haspopup="true"
         onClick={handleClick}
-        classes={{
-          root: classes.padao,
-        }}
+        icon={<MoreHorizIcon fontSize="small" />}
 
       />
 
       <Menu
-
         id="simple-menu"
         getContentAnchorEl={null}
-        className="teste"
         anchorOrigin={{
           vertical: 'top',
           horizontal: 'center',
@@ -143,16 +142,32 @@ export default function SimpleBottomNavigation() {
         open={Boolean(anchorEl)}
         onClose={handleClose}
       >
-        <MenuItem onClick={handleClose} className={classOutros}>Desafios</MenuItem>
-        <MenuItem onClick={handleClose}>Como funciona</MenuItem>
+        <MenuItem
+          className={classOutros}
+          onClick={handleClose}
+        >
+          Desafios
+        </MenuItem>
         <MenuItem
           onClick={handleClose}
-          classes={{ selected: classes.selecionadoSubMenu }}
+        >
+          Como funciona
+        </MenuItem>
+        <MenuItem
+          onClick={handleClose}
         >
           Regulamento
         </MenuItem>
-        <MenuItem onClick={handleClose}>Termos de uso</MenuItem>
-        <MenuItem onClick={handleClose}>By Fidelizar Mais</MenuItem>
+        <MenuItem
+          onClick={handleClose}
+        >
+          Termos de uso
+        </MenuItem>
+        <MenuItem
+          onClick={handleClose}
+        >
+          By Fidelizar Mais
+        </MenuItem>
       </Menu>
     </BottomNavigation>
   );

@@ -1,15 +1,16 @@
 import React from 'react';
 
-import '../App.css';
+import AwardsBox from '../components/AwardsBox';
 import Header from '../components/Header';
-import Awards from '../components/AwardsBox';
+import Navigation from '../components/Navigation';
+import '../App.css';
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <Awards />
-
+      <AwardsBox />
+      <Navigation />
     </div>
   );
 }
