@@ -3,6 +3,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  text-decoration: none;
 
 }
 
@@ -35,4 +36,8 @@ body,
 
 .MuiButton-textSecondary:hover {
   background-color: #e810109e !important;
+}
+
+.MuiButton-containedPrimary:hover {
+  background-color: #e53935cc !important;
 }

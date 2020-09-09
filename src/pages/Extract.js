@@ -1,18 +1,18 @@
 import React from 'react';
 
 import Header from '../components/Header';
-import AwardsBox from '../components/AwardsBox';
 import Navigation from '../components/Navigation';
 import '../App.css';
+import ExtractBox from '../components/ExtractBox';
 
-function Awards() {
+function Extract() {
   return (
     <div className="App">
       <Header />
-      <AwardsBox />
+      <ExtractBox />
       <Navigation />
     </div>
   );
 }
 
-export default Awards;
+export default Extract;

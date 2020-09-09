@@ -1,10 +1,23 @@
 .Mui-selected {
   color: black !important;
 
-} 
+}
 
 .invisivel {
 
   display: none !important;
 
+}
+
+.MuiBottomNavigationAction-label.MuiBottomNavigationAction-iconOnly {
+  opacity: 1 !important;
+}
+
+/*.MuiBottomNavigationAction-root.MuiBottomNavigationAction-iconOnly:hover {
+  color: black;
+} */
+
+
+.MuiMenuItem-root {
+  color: black !important;
 }

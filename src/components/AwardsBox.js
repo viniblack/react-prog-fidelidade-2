@@ -18,7 +18,7 @@ const Awards = () => (
         <ButtonSearch><img className="bt-search" src={Search} alt="Close" /></ButtonSearch>
       </div>
     </form>
-    <AwardsText> </AwardsText>
+    <AwardsText>Prêmios </AwardsText>
     <BoxAll>
       <RedemptionAwards />
       <RedemptionAwards />

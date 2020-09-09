@@ -67,7 +67,6 @@ export default function DraggableDialog() {
         onClick={handleClickOpen}
         startIcon={<RedeemIcon />}
         classes={{ root: classes.rescue }}
-
       >
         Resgatar
       </Button>
@@ -78,10 +77,7 @@ export default function DraggableDialog() {
         aria-labelledby="draggable-dialog-title"
         classes={{ container: classes.redemptionAward }}
       >
-        <DialogTitle
-          id="draggable-dialog-title"
-          style={{ cursor: 'move' }}
-        >
+        <DialogTitle>
           Confirme seu resgate
         </DialogTitle>
         <DialogContent>

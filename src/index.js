@@ -1,12 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import CssBaseline from '@material-ui/core/CssBaseline';
-import App from './pages/Awards';
+
+import {
+  BrowserRouter as Router,
+} from 'react-router-dom';
+import Routers from './routers';
 
 ReactDOM.render(
   <React.StrictMode>
-    <CssBaseline />
-    <App />
+    <Router>
+      <Routers />
+    </Router>
   </React.StrictMode>,
   document.getElementById('root'),
 );
