@@ -2,7 +2,7 @@
 // eslint-disable-next-line import/prefer-default-export
 import styled from 'styled-components';
 
-export const Nav = styled.nav`
+const Nav = styled.nav`
   align-items: center;
   display: grid;
   grid-template-columns: 1fr auto;
@@ -21,7 +21,7 @@ export const Nav = styled.nav`
 
 `;
 
-export const Title = styled.h2`
+const Title = styled.h2`
   font-family: Heebo;
   text-justify:inherit;
   color: #fff;
@@ -30,7 +30,7 @@ export const Title = styled.h2`
 
 `;
 
-export const Button = styled.button`
+const Button = styled.button`
   align-items: center;
   justify-content: center;
 
@@ -40,3 +40,5 @@ export const Button = styled.button`
   margin: .1rem .5rem 0;
   
 `;
+
+export { Nav, Title, Button };

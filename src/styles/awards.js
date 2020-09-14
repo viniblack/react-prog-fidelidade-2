@@ -1,19 +1,19 @@
 import styled from 'styled-components';
 
-export const Main = styled.div`
+const Main = styled.div`
   align-items: center;
   justify-content: center;
 
   padding-bottom: 2rem;
 `;
 
-export const BoxAll = styled.div`
+const BoxAll = styled.div`
     margin: 10px;
     box-shadow: 19px 15px 50px 10px #a5a5a5;
     border-radius: 19px;
 `;
 
-export const ButtonSearch = styled.button`
+const ButtonSearch = styled.button`
   background-color: var(--color-title-nav);
   border: none;
   font-size: 1rem;
@@ -43,7 +43,7 @@ export const ButtonSearch = styled.button`
   }
 `;
 
-export const AwardsText = styled.h2`
+const AwardsText = styled.h2`
   align-items: center;
   display: flex;
 
@@ -52,3 +52,7 @@ export const AwardsText = styled.h2`
   margin-top: 1.5rem;
 
 `;
+
+export {
+  Main, BoxAll, ButtonSearch, AwardsText,
+};

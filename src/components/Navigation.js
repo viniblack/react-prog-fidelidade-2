@@ -14,7 +14,7 @@ import SportsEsportsIcon from '@material-ui/icons/SportsEsports';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 
-import { Link } from 'react-router-dom';
+import { Link as RouterLink } from 'react-router-dom';
 
 import '../styles/navigation.css';
 
@@ -41,10 +41,6 @@ const useStyles = makeStyles({
     color: 'black',
   },
 
-  ativo: {
-    color: 'black',
-  },
-
   menu: {
     color: 'black',
   },
@@ -53,7 +49,8 @@ const useStyles = makeStyles({
 
 export default function SimpleBottomNavigation() {
   const classes = useStyles();
-  const [value, setValue] = React.useState(0);
+  // eslint-disable-next-line no-unused-vars
+  const [/* value */, setValue] = React.useState(0);
 
   const [anchorEl, setAnchorEl] = React.useState(null);
 
@@ -76,7 +73,7 @@ export default function SimpleBottomNavigation() {
 
   return (
     <BottomNavigation
-      value={value}
+      /* value={value} */
       onChange={(event, newValue) => {
         setValue(newValue);
       }}
@@ -84,64 +81,61 @@ export default function SimpleBottomNavigation() {
       classes={{ root: classes.nav }}
     >
 
-      <Link to="/">
-        <BottomNavigationAction
-          label="Prêmio"
-          className={classes.textBt}
-          classes={{
-            root: classes.padao,
-            selected: classes.selecionado,
-          }}
-          icon={<CardGiftcardIcon fontSize="small" />}
-        />
-      </Link>
+      <BottomNavigationAction
+        label="Prêmio"
+        classes={{
+          root: classes.padao,
+          selected: classes.selecionado,
+        }}
+        icon={<CardGiftcardIcon fontSize="small" />}
+        component={RouterLink}
+        to="/"
+      />
 
-      <Link to="/extrato">
-        <BottomNavigationAction
-          label="Extrato"
-          classes={{
-            root: classes.padao,
-            selected: classes.selecionado,
-          }}
-          icon={<ReceiptIcon fontSize="small" />}
-        />
-      </Link>
+      <BottomNavigationAction
+        label="Extrato"
+        classes={{
+          root: classes.padao,
+          selected: classes.selecionado,
+        }}
+        icon={<ReceiptIcon fontSize="small" />}
+        component={RouterLink}
+        to="/extrato"
+      />
 
-      <Link to="/busca">
-        <BottomNavigationAction
-          label="Busca"
-          classes={{
-            root: classes.padao,
-            selected: classes.selecionado,
-          }}
-          icon={<SearchIcon fontSize="small" />}
-        />
-      </Link>
+      <BottomNavigationAction
+        label="Busca"
+        classes={{
+          root: classes.padao,
+          selected: classes.selecionado,
+        }}
+        icon={<SearchIcon fontSize="small" />}
+        component={RouterLink}
+        to="/busca"
+      />
 
-      <Link to="/desafios">
-        <BottomNavigationAction
-          label="Desafios"
-          className={classMenu}
-          classes={{
-            root: classes.padao,
-            selected: classes.selecionado,
-          }}
-          icon={<SportsEsportsIcon fontSize="small" />}
-        />
-      </Link>
+      <BottomNavigationAction
+        label="Desafios"
+        className={classMenu}
+        classes={{
+          root: classes.padao,
+          selected: classes.selecionado,
+        }}
+        icon={<SportsEsportsIcon fontSize="small" />}
+        component={RouterLink}
+        to="/desafios"
+      />
 
       <BottomNavigationAction
         label="Outros"
         classes={{
           root: classes.padao,
           selected: classes.selecionado,
-          colorAction: classes.ativo,
         }}
         aria-controls="simple-menu"
         aria-haspopup="true"
         onClick={handleClick}
         icon={<MoreHorizIcon fontSize="small" />}
-
       />
 
       <Menu
@@ -160,48 +154,51 @@ export default function SimpleBottomNavigation() {
         open={Boolean(anchorEl)}
         onClose={handleClose}
         classes={{
-          root: classes.menu,
+          paper: classes.menu,
         }}
       >
-        <Link to="/desafios">
-          <MenuItem
-            className={classOutros}
-            onClick={handleClose}
-          >
-            Desafios
-          </MenuItem>
-        </Link>
 
-        <Link to="/comofunciona">
-          <MenuItem
-            onClick={handleClose}
-          >
-            Como funciona
-          </MenuItem>
-        </Link>
-        <Link to="/regulamento">
-          <MenuItem
-            onClick={handleClose}
-          >
-            Regulamento
-          </MenuItem>
-        </Link>
+        <MenuItem
+          className={classOutros}
+          onClick={handleClose}
+          component={RouterLink}
+          to="/desafios"
+        >
+          Desafios
+        </MenuItem>
 
-        <Link to="/termosdeuso">
-          <MenuItem
-            onClick={handleClose}
-          >
-            Termos de uso
-          </MenuItem>
-        </Link>
+        <MenuItem
+          onClick={handleClose}
+          component={RouterLink}
+          to="/comofunciona"
+        >
+          Como funciona
+        </MenuItem>
 
-        <Link to="/byfidelizarmais">
-          <MenuItem
-            onClick={handleClose}
-          >
-            By Fidelizar Mais
-          </MenuItem>
-        </Link>
+        <MenuItem
+          onClick={handleClose}
+          component={RouterLink}
+          to="/regulamento"
+        >
+          Regulamento
+        </MenuItem>
+
+        <MenuItem
+          onClick={handleClose}
+          component={RouterLink}
+          to="/termosdeuso"
+        >
+          Termos de uso
+        </MenuItem>
+
+        <MenuItem
+          onClick={handleClose}
+          component={RouterLink}
+          to="/byfidelizarmais"
+        >
+          By Fidelizar Mais
+        </MenuItem>
+
       </Menu>
     </BottomNavigation>
   );

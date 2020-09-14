@@ -9,15 +9,6 @@
 
 }
 
-.MuiBottomNavigationAction-label.MuiBottomNavigationAction-iconOnly {
-  opacity: 1 !important;
-}
-
-/*.MuiBottomNavigationAction-root.MuiBottomNavigationAction-iconOnly:hover {
-  color: black;
-} */
-
-
-.MuiMenuItem-root {
+/* .MuiMenuItem-root {
   color: black !important;
-}
+} */

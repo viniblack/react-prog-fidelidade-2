@@ -3,19 +3,19 @@
 
 import styled from 'styled-components';
 
-export const Box = styled.div`
+const Box = styled.div`
   align-items: center;
 /*   background: var(--color-background-box); */
   
   border-radius: 10px;
   display: flex;
-  flex-grow: 1;
+/*   flex-grow: 1; */
 
   padding: 1rem;
 
 `;
 
-export const BoxRight = styled.div`
+const BoxRight = styled.div`
   display: grid;
 
   grid-template-columns: 1fr;
@@ -35,7 +35,7 @@ export const BoxRight = styled.div`
   }
 `;
 
-export const AwardsImg = styled.img`
+const AwardsImg = styled.img`
   border-radius: 5px;
   width: 6rem;
   
@@ -44,3 +44,5 @@ export const AwardsImg = styled.img`
   }
 
 `;
+
+export { Box, BoxRight, AwardsImg };
