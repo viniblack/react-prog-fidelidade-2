@@ -7,19 +7,23 @@ import {
 import {
   AwardsText,
   Main,
-} from '../styles/awards';
+} from '../../styles/awards/awards';
 
-import FieldSearch from './FieldSearch';
+import FieldSearch from '../Pattern/FieldSearch';
 
 import { BoxRescue, BoxScore } from './ComponentsExtract';
+
+import BoxAll from '../../styles/pattern/box-all';
 
 export default function PageExtract() {
   return (
     <Main>
       <FieldSearch />
       <AwardsText>Extrato </AwardsText>
-      <BoxRescue />
-      <BoxScore />
+      <BoxAll>
+        <BoxRescue />
+        <BoxScore />
+      </BoxAll>
     </Main>
   );
 }

@@ -1,8 +1,8 @@
 import React from 'react';
-import ButtonSearch from '../styles/search';
-import Search from '../assets/img/search.svg';
+import ButtonSearch from '../../styles/pattern/search';
+import Search from '../../assets/img/search.svg';
 
-import '../styles/search.css';
+import '../../styles/pattern/search.css';
 
 const FieldSearch = () => (
   <>

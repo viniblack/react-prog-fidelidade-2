@@ -5,11 +5,9 @@ import styled from 'styled-components';
 
 const Box = styled.div`
   align-items: center;
-/*   background: var(--color-background-box); */
   
   border-radius: 10px;
   display: flex;
-/*   flex-grow: 1; */
 
   padding: 1rem;
 

@@ -1,12 +1,13 @@
 import React from 'react';
 import {
   AwardsText,
-  BoxAll,
   Main,
-} from '../styles/awards';
+} from '../../styles/awards/awards';
 import AwardsRedemption from './AwardsRedemption';
 
-import FieldSearch from './FieldSearch';
+import BoxAll from '../../styles/pattern/box-all';
+
+import FieldSearch from '../Pattern/FieldSearch';
 
 const Awards = () => (
   <Main>
