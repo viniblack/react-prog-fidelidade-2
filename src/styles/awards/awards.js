@@ -4,6 +4,8 @@ const Main = styled.div`
   align-items: center;
   justify-content: center;
   padding-bottom: 2rem;
+  position: relative; 
+  top: 6rem; 
 `;
 
 const ButtonSearch = styled.button`

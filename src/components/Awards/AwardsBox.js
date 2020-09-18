@@ -1,19 +1,21 @@
 import React from 'react';
 import {
   AwardsText,
-  Main,
 } from '../../styles/awards/awards';
 import AwardsRedemption from './AwardsRedemption';
-
+import Banner from '../../assets/img/banner2.png';
 import BoxAll from '../../styles/pattern/box-all';
 
 import FieldSearch from '../Pattern/FieldSearch';
 
+import '../../styles/awards/awards.css';
+
 const Awards = () => (
-  <Main>
+  <>
+    <img className="banner" src={Banner} alt="banner" />
     <FieldSearch />
     <AwardsText>Prêmios </AwardsText>
-    <BoxAll>
+    <BoxAll margin="3rem">
       <AwardsRedemption />
       <AwardsRedemption />
       <AwardsRedemption />
@@ -21,7 +23,7 @@ const Awards = () => (
       <AwardsRedemption />
       <AwardsRedemption />
     </BoxAll>
-  </Main>
+  </>
 );
 
 export default Awards;

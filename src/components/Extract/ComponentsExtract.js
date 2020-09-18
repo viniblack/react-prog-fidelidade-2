@@ -5,41 +5,59 @@ import {
 
 import FiberManualRecordIcon from '@material-ui/icons/FiberManualRecord';
 
+import {
+  Box, ExtractTitle, ExtractSubTitle, Date, PointAccumulation, PointRescue,
+} from '../../styles/extract/box-rescue';
+
 const useStyles = makeStyles({
   rescue: {
-    color: 'red',
+    color: '#e81010',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    gridRow: '1 / 2',
   },
+
   score: {
-    color: 'green',
+    color: '#05ed14',
+    display: 'flex',
   },
 });
 
-export function BoxRescue() {
+export function Rescue() {
   const classes = useStyles();
 
   return (
-    <div>
+    <Box>
       <FiberManualRecordIcon
-        fontSize="large"
+        fontSize="small"
         classes={{
           root: classes.rescue,
         }}
       />
-    </div>
+      <ExtractTitle>Resgate de pontos</ExtractTitle>
+      <ExtractSubTitle>Azulejo Decorativo Cantinho Do Café </ExtractSubTitle>
+      <Date> 07 out</Date>
+      <PointAccumulation> 500 pt</PointAccumulation>
+    </Box>
   );
 }
 
-export function BoxScore() {
+export function Score() {
   const classes = useStyles();
 
   return (
-    <div>
+    <Box>
       <FiberManualRecordIcon
-        fontSize="large"
+        fontSize="small"
         classes={{
           root: classes.score,
         }}
       />
-    </div>
+      <ExtractTitle>Acumulo de pontos</ExtractTitle>
+      <ExtractSubTitle>Compra / Pedido</ExtractSubTitle>
+      <Date> 07 out</Date>
+      <PointRescue color="#10e814"> 500 pt</PointRescue>
+    </Box>
   );
 }
