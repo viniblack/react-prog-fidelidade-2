@@ -5,7 +5,7 @@ import Header from '../components/Pattern/Header';
 import Navigation from '../components/Pattern/Navigation';
 import '../App.css';
 
-function Extract() {
+function HowItWorks() {
   return (
     <div className="App">
       <Header />
@@ -15,4 +15,4 @@ function Extract() {
   );
 }
 
-export default Extract;
+export default HowItWorks;

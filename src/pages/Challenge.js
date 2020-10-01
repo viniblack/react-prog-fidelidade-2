@@ -4,15 +4,16 @@ import Header from '../components/Pattern/Header';
 
 import Navigation from '../components/Pattern/Navigation';
 import '../App.css';
+import ChallengeBox from '../components/Challenge/ChallengeBox';
 
-function Extract() {
+function Challenge() {
   return (
     <div className="App">
       <Header />
-      Desafio
+      <ChallengeBox />
       <Navigation />
     </div>
   );
 }
 
-export default Extract;
+export default Challenge;

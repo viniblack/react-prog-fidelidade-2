@@ -1,13 +1,5 @@
 import styled from 'styled-components';
 
-const Main = styled.div`
-  align-items: center;
-  justify-content: center;
-  padding-bottom: 2rem;
-  position: relative; 
-  top: 6rem; 
-`;
-
 const ButtonSearch = styled.button`
   background-color: var(--color-title-nav);
   border: none;
@@ -38,6 +30,14 @@ const ButtonSearch = styled.button`
   }
 `;
 
+const Main = styled.div`
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 2rem;
+  position: relative; 
+  top: 6rem; 
+`;
+
 const AwardsText = styled.h2`
   align-items: center;
   display: flex;
@@ -48,5 +48,5 @@ const AwardsText = styled.h2`
 `;
 
 export {
-  Main, ButtonSearch, AwardsText,
+  ButtonSearch as default,
 };
