@@ -6,7 +6,7 @@ import { Rescue, Score } from './ComponentsExtract';
 
 import {
   BoxAll,
-  AwardsText,
+  SectionTitle,
   Main,
 } from '../../styles/pattern/box-all';
 
@@ -14,7 +14,7 @@ export default function PageExtract() {
   return (
     <Main>
       <FieldSearch />
-      <AwardsText>Extrato </AwardsText>
+      <SectionTitle>Extrato </SectionTitle>
       <BoxAll margin="1rem">
         <Rescue />
         <Score />

@@ -5,7 +5,7 @@ import Banner from '../../assets/img/banner2.png';
 
 import {
   BoxAll,
-  AwardsText,
+  SectionTitle,
 
 } from '../../styles/pattern/box-all';
 
@@ -17,7 +17,7 @@ const AwardsBox = () => (
   <>
     <img className="banner" src={Banner} alt="banner" />
     <FieldSearch />
-    <AwardsText>Prêmios </AwardsText>
+    <SectionTitle>Prêmios </SectionTitle>
     <BoxAll margin="3rem">
       <AwardsRedemption />
       <AwardsRedemption />

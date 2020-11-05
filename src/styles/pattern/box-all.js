@@ -15,7 +15,7 @@ const Main = styled.div`
   top: 6rem; 
 `;
 
-const AwardsText = styled.h2`
+const SectionTitle = styled.h2`
   align-items: center;
   display: flex;
 
@@ -24,4 +24,4 @@ const AwardsText = styled.h2`
 
 `;
 
-export { BoxAll, Main, AwardsText };
+export { BoxAll, Main, SectionTitle };

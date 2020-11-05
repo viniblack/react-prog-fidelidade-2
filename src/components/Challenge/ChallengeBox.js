@@ -2,25 +2,16 @@ import React from 'react';
 
 import { makeStyles } from '@material-ui/core/styles';
 
-import AddIcon from '@material-ui/icons/Add';
-import RemoveIcon from '@material-ui/icons/Remove';
+import AnswerWin from './AnswerWin';
 import FieldSearch from '../Pattern/FieldSearch';
 
 import {
   BoxAll,
-  AwardsText,
+  SectionTitle,
   Main,
 } from '../../styles/pattern/box-all';
 
-import { AnswerWin, TextAnswerWin } from '../../styles/challenge/box-answer-win';
 import BoxChallenge from '../../styles/challenge/challenge';
-
-function test() {
-  return (
-
-    console.log('oiiie')
-  );
-}
 
 const useStyles = makeStyles({
   open: {
@@ -35,27 +26,15 @@ const useStyles = makeStyles({
 });
 
 export default function ChallengeBox() {
+  // eslint-disable-next-line no-unused-vars
   const classes = useStyles();
   return (
     <Main>
       <FieldSearch />
-      <AwardsText>Desavios </AwardsText>
+      <SectionTitle>Desavios </SectionTitle>
       <BoxAll margin="1rem">
         <BoxChallenge>
-          <AnswerWin>
-            <TextAnswerWin>
-              Responda e ganhe
-              <div
-                onClick={test}
-                onKeyPress={test}
-                role="button"
-                tabIndex="0"
-              >
-                <AddIcon classes={{ root: classes.close }} />
-                <RemoveIcon classes={{ root: classes.open }} />
-              </div>
-            </TextAnswerWin>
-          </AnswerWin>
+          <AnswerWin />
         </BoxChallenge>
       </BoxAll>
     </Main>
