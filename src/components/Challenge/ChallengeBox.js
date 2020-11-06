@@ -32,7 +32,7 @@ export default function ChallengeBox() {
   return (
     <Main>
       <FieldSearch />
-      <SectionTitle>Desavios </SectionTitle>
+      <SectionTitle>Desafios </SectionTitle>
       <BoxAll margin="1rem">
         <BoxChallenge>
           <AnswerWin />
