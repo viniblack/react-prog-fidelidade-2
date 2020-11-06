@@ -1,6 +1,8 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
 
+import { makeStyles } from '@material-ui/core/styles';
+
 import AddIcon from '@material-ui/icons/Add';
 import RemoveIcon from '@material-ui/icons/Remove';
 import DoneIcon from '@material-ui/icons/Done';
@@ -8,10 +10,10 @@ import DoneIcon from '@material-ui/icons/Done';
 import TextareaAutosize from '@material-ui/core/TextareaAutosize';
 import Button from '@material-ui/core/Button';
 import {
-  TitleAnswerWin, TextAnswerWin, SubtitleAnswerWin, NoteBox, Note,
+  TextAnswerWin, NoteBox, Note,
 } from '../../styles/challenge/box-answer-win';
 
-import BoxChallenge from '../../styles/challenge/challenge';
+import { BoxChallenge, TitleChallenge, SubtitleChallenge } from '../../styles/challenge/challenge';
 
 const NoteNumber = [
   { text: '0' },
@@ -27,17 +29,28 @@ const NoteNumber = [
   { text: '10' },
 ];
 
+const useStyles = makeStyles({
+  test: {
+    background: '#00FF19',
+    '&:hover': {
+      background: '#00FF19',
+    },
+  },
+
+});
+
 export default function AnswerWin() {
+  const classes = useStyles();
   return (
-    <BoxChallenge>
-      <TitleAnswerWin>
+    <BoxChallenge row="2.5rem 1rem 4rem 3rem 6rem 3rem">
+      <TitleChallenge>
         Responda e ganhe
         {/* <AddIcon />
       <RemoveIcon /> */}
-      </TitleAnswerWin>
-      <SubtitleAnswerWin>
+      </TitleChallenge>
+      <SubtitleChallenge>
         Responda a pesquisa e ganhe 50 pontos
-      </SubtitleAnswerWin>
+      </SubtitleChallenge>
       <TextAnswerWin>
         Em uma escala de 0 a 10, o quanto você recomendaria a FIDELIZAR MAIS a um amigo ou familiar?
       </TextAnswerWin>
@@ -51,7 +64,7 @@ export default function AnswerWin() {
         aria-label="maximum height"
         placeholder="Escreva em poucas palavras o motivo de sua nota..."
       />
-      <Button variant="contained" color="primary" size="small">
+      <Button variant="contained" color="primary" size="small" classes={{ root: classes.test }}>
         <DoneIcon />
         Enviar
       </Button>

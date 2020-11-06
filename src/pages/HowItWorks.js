@@ -9,7 +9,9 @@ function HowItWorks() {
   return (
     <div className="App">
       <Header />
-      Como Funciona
+      <p className="test">
+        Como Funciona
+      </p>
       <Navigation />
     </div>
   );

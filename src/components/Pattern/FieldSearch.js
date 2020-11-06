@@ -12,7 +12,6 @@ const FieldSearch = () => (
         <ButtonSearch><img className="bt-search" src={Search} alt="Close" /></ButtonSearch>
       </div>
     </form>
-
   </>
 );
 

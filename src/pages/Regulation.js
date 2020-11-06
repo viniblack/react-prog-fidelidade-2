@@ -9,7 +9,9 @@ function Regulation() {
   return (
     <div className="App">
       <Header />
-      Regulamento
+      <p className="test">
+        Regulamento
+      </p>
       <Navigation />
     </div>
   );

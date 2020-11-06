@@ -3,6 +3,7 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 
 import AnswerWin from './AnswerWin';
+import ReferWin from './ReferWin';
 import FieldSearch from '../Pattern/FieldSearch';
 
 import {
@@ -11,7 +12,7 @@ import {
   Main,
 } from '../../styles/pattern/box-all';
 
-import BoxChallenge from '../../styles/challenge/challenge';
+import { BoxChallenge } from '../../styles/challenge/challenge';
 
 const useStyles = makeStyles({
   open: {
@@ -35,6 +36,9 @@ export default function ChallengeBox() {
       <BoxAll margin="1rem">
         <BoxChallenge>
           <AnswerWin />
+        </BoxChallenge>
+        <BoxChallenge>
+          <ReferWin />
         </BoxChallenge>
       </BoxAll>
     </Main>

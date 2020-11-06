@@ -9,7 +9,9 @@ function Search() {
   return (
     <div className="App">
       <Header />
-      Busca
+      <p className="test">
+        Busca
+      </p>
       <Navigation />
     </div>
   );

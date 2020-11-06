@@ -1,32 +1,5 @@
 import styled from 'styled-components';
 
-const TitleAnswerWin = styled.h2`
-  font-size: 1rem;
-  padding-top: .5rem;
-  &::after {
-    content: "";
-    background-color: #9c9c9c;
-    border-radius: 5px;
-    height: .1rem;
-    display: flex;
-    
-  }
-`;
-
-const SubtitleAnswerWin = styled.h3`
-    font-size: .8rem;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  &::after {
-    content: "";
-    background-color: #9c9c9c;
-    border-radius: 5px;
-    height: .05rem;
-    width: 22em;
-    display: flex;
-  }
-`;
 const TextAnswerWin = styled.p`
   margin-top: .5em;
   font-size: .8rem;
@@ -96,5 +69,5 @@ const Note = styled.button`
 `;
 
 export {
-  TitleAnswerWin, TextAnswerWin, SubtitleAnswerWin, NoteBox, Note,
+  TextAnswerWin, NoteBox, Note,
 };

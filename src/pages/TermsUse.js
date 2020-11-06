@@ -9,7 +9,9 @@ function TermsUse() {
   return (
     <div className="App">
       <Header />
-      Termos de uso
+      <p className="test">
+        Termos de uso
+      </p>
       <Navigation />
     </div>
   );

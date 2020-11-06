@@ -13,20 +13,20 @@ import FieldSearch from '../Pattern/FieldSearch';
 
 import '../../styles/awards/awards.css';
 
-const AwardsBox = () => (
-  <>
-    <img className="banner" src={Banner} alt="banner" />
-    <FieldSearch />
-    <SectionTitle>Prêmios </SectionTitle>
-    <BoxAll margin="3rem">
-      <AwardsRedemption />
-      <AwardsRedemption />
-      <AwardsRedemption />
-      <AwardsRedemption />
-      <AwardsRedemption />
-      <AwardsRedemption />
-    </BoxAll>
-  </>
-);
-
-export default AwardsBox;
+export default function AwardsBox() {
+  return (
+    <>
+      <img className="banner" src={Banner} alt="banner" />
+      <FieldSearch />
+      <SectionTitle>Prêmios </SectionTitle>
+      <BoxAll margin="3rem">
+        <AwardsRedemption />
+        <AwardsRedemption />
+        <AwardsRedemption />
+        <AwardsRedemption />
+        <AwardsRedemption />
+        <AwardsRedemption />
+      </BoxAll>
+    </>
+  );
+}
