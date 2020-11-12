@@ -28,7 +28,6 @@ const SubtitleChallenge = styled.h3`
     display: flex;
     align-items: center;
     flex-direction: column;
-  
 `;
 
 export {

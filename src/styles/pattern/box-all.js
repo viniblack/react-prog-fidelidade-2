@@ -2,7 +2,12 @@ import styled from 'styled-components';
 
 const BoxAll = styled.div((props) => ({
   borderRadius: '19px',
-  marginBottom: props.margin,
+  marginBottom: props.marginBottom,
+  margin: props.margin,
+  display: 'flex',
+  flexDirection: 'column',
+  alignItems: 'center',
+  background: props.color,
 }));
 
 const Main = styled.div`
@@ -22,4 +27,15 @@ const SectionTitle = styled.h2`
 
 `;
 
-export { BoxAll, Main, SectionTitle };
+const TextPattern = styled.p`
+  margin-top: .5em;
+  font-size: 1rem;
+  line-height: 1rem;
+  text-align: justify;
+  text-justify: inter-word;
+}
+`;
+
+export {
+  BoxAll, Main, SectionTitle, TextPattern,
+};

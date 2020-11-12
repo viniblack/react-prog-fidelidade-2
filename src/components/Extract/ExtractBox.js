@@ -15,7 +15,7 @@ export default function PageExtract() {
     <Main>
       <FieldSearch />
       <SectionTitle>Extrato </SectionTitle>
-      <BoxAll margin="1rem">
+      <BoxAll marginBottom="1rem">
         <Rescue />
         <Score />
         <Rescue />

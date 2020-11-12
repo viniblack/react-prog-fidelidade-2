@@ -33,7 +33,7 @@ export default function ChallengeBox() {
     <Main>
       <FieldSearch />
       <SectionTitle>Desafios </SectionTitle>
-      <BoxAll margin="1rem">
+      <BoxAll marginBottom="1rem">
         <BoxChallenge>
           <AnswerWin />
         </BoxChallenge>

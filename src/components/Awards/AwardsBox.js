@@ -19,7 +19,7 @@ export default function AwardsBox() {
       <img className="banner" src={Banner} alt="banner" />
       <FieldSearch />
       <SectionTitle>Prêmios </SectionTitle>
-      <BoxAll margin="3rem">
+      <BoxAll marginBottom="3rem">
         <AwardsRedemption />
         <AwardsRedemption />
         <AwardsRedemption />
