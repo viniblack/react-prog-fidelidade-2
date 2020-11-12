@@ -3,6 +3,7 @@ import styled from 'styled-components';
 const BoxAll = styled.div((props) => ({
   borderRadius: '19px',
   marginBottom: props.marginBottom,
+  paddingTop: props.paddingTop,
   margin: props.margin,
   display: 'flex',
   flexDirection: 'column',
@@ -23,16 +24,14 @@ const SectionTitle = styled.h2`
   display: flex;
 
   font-size: 1.2rem; 
-  margin-left: 1.5rem;
+  margin: 0 1rem;
 
 `;
 
 const TextPattern = styled.p`
-  margin-top: .5em;
-  font-size: 1rem;
-  line-height: 1rem;
-  text-align: justify;
-  text-justify: inter-word;
+font-size: 1rem;
+line-height: 1rem;
+margin: .7em 1rem;
 }
 `;
 
