@@ -5,17 +5,20 @@ import FieldSearch from '../Pattern/FieldSearch';
 import { Rescue, Score } from './ComponentsExtract';
 
 import {
-  BoxAll,
   SectionTitle,
   Main,
 } from '../../styles/pattern/box-all';
+
+import {
+  BoxAllExtract,
+} from '../../styles/extract/box-rescue';
 
 export default function PageExtract() {
   return (
     <Main>
       <FieldSearch />
       <SectionTitle>Extrato </SectionTitle>
-      <BoxAll marginBottom="1rem">
+      <BoxAllExtract marginBottom="1rem">
         <Rescue />
         <Score />
         <Rescue />
@@ -24,7 +27,7 @@ export default function PageExtract() {
         <Score />
         <Rescue />
         <Rescue />
-      </BoxAll>
+      </BoxAllExtract>
     </Main>
   );
 }

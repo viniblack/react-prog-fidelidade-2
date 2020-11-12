@@ -19,9 +19,6 @@ const Box = styled.div`
     width: 5%;
     top: -15px;
   }
-
-  
-
 `;
 
 const ExtractTitle = styled.h2`
@@ -71,6 +68,11 @@ const PointRescue = styled.p((props) => ({
   color: props.color,
 }));
 
+const BoxAllExtract = styled.div((props) => ({
+  borderRadius: '19px',
+  marginBottom: props.margin,
+}));
+
 export {
   Box,
   Date,
@@ -78,4 +80,5 @@ export {
   ExtractSubTitle,
   PointAccumulation,
   PointRescue,
+  BoxAllExtract,
 };
