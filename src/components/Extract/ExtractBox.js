@@ -15,10 +15,10 @@ import {
 
 export default function PageExtract() {
   return (
-    <Main>
+    <Main top="6rem">
       <FieldSearch />
       <SectionTitle>Extrato </SectionTitle>
-      <BoxAllExtract marginBottom="1rem">
+      <BoxAllExtract margin="2rem">
         <Rescue />
         <Score />
         <Rescue />

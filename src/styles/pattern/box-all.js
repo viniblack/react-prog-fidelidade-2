@@ -11,13 +11,14 @@ const BoxAll = styled.div((props) => ({
   background: props.color,
 }));
 
-const Main = styled.div`
-  align-items: center;
-  justify-content: center;
-  padding-bottom: 2rem;
-  position: relative; 
-  top: 6rem; 
-`;
+const Main = styled.div((props) => ({
+  alignItems: 'center',
+  justifyContent: 'center',
+  paddingBottom: '2rem',
+  position: 'relative',
+  top: props.top,
+  marginBottom: props.marginBottom,
+}));
 
 const SectionTitle = styled.h2`
   align-items: center;
@@ -32,9 +33,35 @@ const TextPattern = styled.p`
 font-size: 1rem;
 line-height: 1rem;
 margin: .7em 1rem;
-}
+`;
+
+const Fidelizar = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: .5em;
+  width: 100%;
+  bottom: 0;
+  position: fixed;
+  background-color: #e0e0e0;
+  border-radius: 0 0 10px 10px;
+  font-size: .7em;
+  
+`;
+
+const FidelizarLink = styled.a`
+  display: flex;
+  align-items: center;
+  color: #AD1F2E;
+
+`;
+
+const LogoFidelizar = styled.img`
+  max-width: 15px;
+  margin: 0 .3rem;
 `;
 
 export {
   BoxAll, Main, SectionTitle, TextPattern,
+  Fidelizar, LogoFidelizar, FidelizarLink,
 };
