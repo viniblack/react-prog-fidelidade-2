@@ -50,6 +50,7 @@ export default function ReferWin() {
 
       <Paper component="form" className={classes.root}>
         <InputBase
+          fullWidth
           className={classes.input}
           placeholder=""
           inputProps={{ 'aria-label': 'search google maps' }}

@@ -36,35 +36,35 @@ const Note = styled.button`
   }
   &:nth-child(4) {
     background-color: #f3701f;
-  border: 1px solid #f3701f;
+    border: 1px solid #f3701f;
   }
   &:nth-child(5) {
     background-color: #f9a824;
-  border: 1px solid #f9a824;
+    border: 1px solid #f9a824;
   }
   &:nth-child(6) {
     background-color: #ffc70f;
-  border: 1px solid #ffc70f;
+    border: 1px solid #ffc70f;
   }
   &:nth-child(7) {
     background-color: #d9cc23;
-  border: 1px solid #d9cc23;
+    border: 1px solid #d9cc23;
   }
   &:nth-child(8) {
     background-color: #dadb25;
-  border: 1px solid #dadb25;
+    border: 1px solid #dadb25;
   }
   &:nth-child(9) {
     background-color: #c4d92b;
-  border: 1px solid #c4d92b;
+    border: 1px solid #c4d92b;
   }
   &:nth-child(10) {
     background-color: #b1d137;
-  border: 1px solid #b1d137;
+    border: 1px solid #b1d137;
   }
   &:nth-child(11) {
     background-color: #66b54d;
-  border: 1px solid #66b54d;
+    border: 1px solid #66b54d;
   }
 `;
 
