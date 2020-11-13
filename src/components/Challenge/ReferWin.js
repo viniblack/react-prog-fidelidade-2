@@ -33,7 +33,7 @@ const useStyles = makeStyles({
 export default function ReferWin() {
   const classes = useStyles();
   return (
-    <BoxChallenge height="9rem" row="2.5rem">
+    <BoxChallenge maxWidth="37rem" minWidth="20rem" height="9rem" row="2.5rem">
 
       <TitleChallenge>
         Indique e ganhe

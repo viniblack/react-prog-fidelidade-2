@@ -8,6 +8,10 @@ const BoxChallenge = styled.div((props) => ({
   display: 'grid',
   gridTemplateRows: props.row,
   marginBottom: '1.5rem',
+
+  minWidth: props.minWidth,
+  maxWidth: props.maxWidth,
+
 }));
 
 const TitleChallenge = styled.h2`
