@@ -8,7 +8,7 @@ import {
 import CardGiftcardIcon from '@material-ui/icons/CardGiftcard';
 import MoreHorizIcon from '@material-ui/icons/MoreHoriz';
 import ReceiptIcon from '@material-ui/icons/Receipt';
-import SearchIcon from '@material-ui/icons/Search';
+/* import SearchIcon from '@material-ui/icons/Search'; */
 import SportsEsportsIcon from '@material-ui/icons/SportsEsports';
 
 import Menu from '@material-ui/core/Menu';
@@ -66,19 +66,21 @@ export default function SimpleBottomNavigation() {
     setAnchorEl(null);
   };
 
+  // eslint-disable-next-line no-unused-vars
   const windowWidth = window.innerWidth;
 
+  /*
   let { classMenu, classOutros } = 'visivel';
   if (windowWidth <= 400) {
     classMenu = ' invisivel';
   } else {
     classOutros = ' invisivel';
-  }
+  } */
 
   return (
     <>
       <BottomNavigation
-      /* value={value} */
+        /* value={value} */
         onChange={(event, newValue) => {
           setValue(newValue);
         }}
@@ -108,7 +110,7 @@ export default function SimpleBottomNavigation() {
           to="/extrato"
         />
 
-        <BottomNavigationAction
+        {/*  <BottomNavigationAction
           label="Busca"
           classes={{
             root: classes.padao,
@@ -117,11 +119,11 @@ export default function SimpleBottomNavigation() {
           icon={<SearchIcon fontSize="small" />}
           component={RouterLink}
           to="/busca"
-        />
+        /> */}
 
         <BottomNavigationAction
           label="Desafios"
-          className={classMenu}
+         /*  className={classMenu} */
           classes={{
             root: classes.padao,
             selected: classes.selecionado,
@@ -163,14 +165,14 @@ export default function SimpleBottomNavigation() {
           }}
         >
 
-          <MenuItem
+          {/*  <MenuItem
             className={classOutros}
             onClick={handleClose}
             component={RouterLink}
             to="/desafios"
           >
             Desafios
-          </MenuItem>
+          </MenuItem> */}
 
           <MenuItem
             onClick={handleClose}

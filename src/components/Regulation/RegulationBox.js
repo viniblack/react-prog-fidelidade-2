@@ -5,10 +5,13 @@ import {
   SectionTitle,
   Main,
   TextPattern,
+  List,
+  ListLi,
+  Img,
 } from '../../styles/pattern/box-all';
 
 import {
-  Img, Points, Line, List, ListLi,
+  Points, Line,
 } from '../../styles/regulation/regulation-box';
 
 import '../../styles/regulation/regulation-box.css';
@@ -25,7 +28,15 @@ export default function ReagulationBox() {
   return (
     <Main marginBottom="2rem" top="4rem">
       <SectionTitle>Regulamento</SectionTitle>
-      <BoxAll margin="1rem" color="white" paddingTop="1rem" marginBottom="100px">
+      <BoxAll
+        flexDirection="column"
+        alignItems="center"
+        margin="1rem"
+        color="white"
+        paddingTop="1rem"
+        marginBottom="100px"
+        display="flex"
+      >
         <Img src={Register} alt="banner" />
         <SectionTitle>Cadastre-se e ganhe</SectionTitle>
         <TextPattern>

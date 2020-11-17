@@ -1,16 +1,5 @@
 import styled from 'styled-components';
 
-const BoxAll = styled.div((props) => ({
-  borderRadius: '19px',
-  marginBottom: props.marginBottom,
-  paddingTop: props.paddingTop,
-  margin: props.margin,
-  display: 'flex',
-  flexDirection: 'column',
-  alignItems: 'center',
-  background: props.color,
-}));
-
 const Main = styled.div((props) => ({
   alignItems: 'center',
   justifyContent: 'center',
@@ -20,17 +9,28 @@ const Main = styled.div((props) => ({
   marginBottom: props.marginBottom,
 }));
 
+const BoxAll = styled.div((props) => ({
+  borderRadius: '10px',
+  marginBottom: props.marginBottom,
+  paddingTop: props.paddingTop,
+  margin: props.margin,
+  display: props.display,
+  flexDirection: props.flexDirection,
+  alignItems: props.alignItems,
+  background: props.color,
+}));
+
 const SectionTitle = styled.h2`
   align-items: center;
   display: flex;
 
-  font-size: 1.2rem; 
+  font-size: 1rem; 
   margin: 0 1rem;
 
 `;
 
 const TextPattern = styled.p`
-font-size: 1rem;
+font-size: .9rem;
 line-height: 1rem;
 margin: .7em 1rem;
 `;
@@ -53,7 +53,7 @@ const FidelizarLink = styled.a`
   display: flex;
   align-items: center;
   color: #AD1F2E;
-
+  font-weight: bold;
 `;
 
 const LogoFidelizar = styled.img`
@@ -61,7 +61,22 @@ const LogoFidelizar = styled.img`
   margin: 0 .3rem;
 `;
 
+const List = styled.ol`
+margin-top: .5em;
+line-height: 1rem;
+margin: 1rem;
+line-height: 1rem;
+`;
+
+const ListLi = styled.li`
+margin-top: .5em;
+`;
+
+const Img = styled.img`
+  width: 5rem;
+`;
+
 export {
-  BoxAll, Main, SectionTitle, TextPattern,
-  Fidelizar, LogoFidelizar, FidelizarLink,
+  BoxAll, Main, SectionTitle, TextPattern, Fidelizar,
+  LogoFidelizar, FidelizarLink, List, ListLi, Img,
 };
