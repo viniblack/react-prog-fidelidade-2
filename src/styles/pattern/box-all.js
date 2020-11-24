@@ -63,11 +63,19 @@ const LogoFidelizar = styled.img`
   margin: 0 .3rem;
 `;
 
-const List = styled.ol`
+const ListOl = styled.ol`
 margin-top: .5em;
 line-height: 1rem;
 margin: 1rem;
 line-height: 1rem;
+`;
+
+const ListUl = styled.ul`
+margin-top: .5em;
+line-height: 1rem;
+margin: 0rem 2rem;
+line-height: 1rem;
+font-size: .9rem;
 `;
 
 const ListLi = styled.li`
@@ -80,5 +88,6 @@ const Img = styled.img`
 
 export {
   BoxAll, Main, SectionTitle, TextPattern, Fidelizar,
-  LogoFidelizar, FidelizarLink, List, ListLi, Img,
+  LogoFidelizar, FidelizarLink, ListOl, ListLi, Img,
+  ListUl,
 };

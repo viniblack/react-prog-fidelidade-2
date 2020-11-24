@@ -5,7 +5,7 @@ import {
   SectionTitle,
   Main,
   TextPattern,
-  List,
+  ListOl,
   ListLi,
   Img,
 } from '../../styles/pattern/box-all';
@@ -68,11 +68,11 @@ export default function ReagulationBox() {
           <br />
           <br />
           Como faço para ganhar?
-          <List>
+          <ListOl>
             <ListLi>Seu amigo(a) indicado não podeser nosso cliente;</ListLi>
             <ListLi>O indicado tem que fazer o cadastro e fazer a primeira compra;</ListLi>
             <ListLi>Em até 24h você receberá seus pontos</ListLi>
-          </List>
+          </ListOl>
         </TextPattern>
         <Line />
 
@@ -121,7 +121,7 @@ export default function ReagulationBox() {
         <Img src={Exchange} alt="banner" />
         <SectionTitle>Como trocar meus pontos?</SectionTitle>
         <TextPattern>
-          <List>
+          <ListOl>
             <ListLi>
               A solicitação de prêmios poderá ser realizada somente pelo
               titular do programa de fidelidade da Gravidicas Store.
@@ -147,7 +147,7 @@ export default function ReagulationBox() {
               Caso seja solicitado em outra data, o custo com o frete ficará a
               cargo do solicitante (aplicado apenas para resgate de produtos físicos).
             </ListLi>
-          </List>
+          </ListOl>
         </TextPattern>
       </BoxAll>
     </Main>

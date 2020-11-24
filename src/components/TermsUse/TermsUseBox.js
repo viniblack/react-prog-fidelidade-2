@@ -5,7 +5,7 @@ import {
   SectionTitle,
   Main,
   TextPattern,
-  List,
+  ListOl,
   ListLi,
 } from '../../styles/pattern/box-all';
 
@@ -20,7 +20,7 @@ export default function TermsUseBox() {
         display="flex"
       >
         <TextPattern>
-          <List>
+          <ListOl>
             <ListLi>
               O cliente no ato de sua adesão ao PROGRAMA FIDELIDADE autoriza a
               Gravidicas Store utilizar para fins administrativos e de marketing
@@ -47,7 +47,7 @@ export default function TermsUseBox() {
               A participação dos clientes Gravidicas Store ao programa de fidelidade
               será regulada exclusivamente por este
             </ListLi>
-          </List>
+          </ListOl>
         </TextPattern>
       </BoxAll>
     </Main>
