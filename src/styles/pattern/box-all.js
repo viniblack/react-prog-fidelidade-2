@@ -86,8 +86,12 @@ const Img = styled.img`
   width: 5rem;
 `;
 
+const TermoImg = styled.img`
+  width: 15rem;
+`;
+
 export {
   BoxAll, Main, SectionTitle, TextPattern, Fidelizar,
   LogoFidelizar, FidelizarLink, ListOl, ListLi, Img,
-  ListUl,
+  ListUl,TermoImg
 };

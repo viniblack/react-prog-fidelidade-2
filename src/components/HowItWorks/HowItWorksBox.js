@@ -5,11 +5,18 @@ import {
   Main,
   BoxAll,
   TextPattern,
+  TermoImg,
   ListUl,
   ListLi,
 } from '../../styles/pattern/box-all';
 
-import Test from '../../assets/img/howItWorks/1.gif';
+import Premio from '../../assets/img/howItWorks/1.gif';
+import ImgPremio from '../../assets/img/howItWorks/2.gif';
+import Resgate from '../../assets/img/howItWorks/3.gif';
+import Extrato from '../../assets/img/howItWorks/4.gif';
+import Desafio from '../../assets/img/howItWorks/5.jpg';
+import Regulamento from '../../assets/img/howItWorks/6.gif';
+import Termos from '../../assets/img/howItWorks/7.jpg';
 
 export default function HowItWorksBox() {
   return (
@@ -21,7 +28,6 @@ export default function HowItWorksBox() {
         margin=".5rem"
         color="white"
         padding="1rem"
-        marginBottom="100px"
         display="flex"
       >
         <TextPattern>
@@ -34,7 +40,7 @@ export default function HowItWorksBox() {
           do programa de fidelidade
         </TextPattern>
 
-        <img src={Test} alt="loading..." />
+        <img src={Premio} alt="loading..." />
 
         <TextPattern>
           1 - Depois que você clicar em cima do botão do programa de fidelidade,
@@ -61,13 +67,13 @@ export default function HowItWorksBox() {
           e ver a descrição do prêmio
         </TextPattern>
 
-        <img src={Test} alt="loading..." />
+        <img src={ImgPremio} alt="loading..." />
 
         <TextPattern>
           Clicando em Resgatar ira aparecer um tela de confirmação para resgatar aquele prêmio
         </TextPattern>
 
-        <img src={Test} alt="loading..." />
+        <img src={Resgate} alt="loading..." />
 
         <TextPattern>
           2 - A próxima página é do extrato, onde você pode consultar o seu histórico
@@ -79,7 +85,7 @@ export default function HowItWorksBox() {
           histórico no de acumulo e resgate;
         </TextPattern>
 
-        <img src={Test} alt="loading..." />
+        <img src={Extrato} alt="loading..." />
 
         <TextPattern>
           3 - A próxima página é de desafio, onde você encontra alguns desafios dinsponíveis como:
@@ -88,21 +94,21 @@ export default function HowItWorksBox() {
           2. Indique e ganhe
         </TextPattern>
 
-        <img src={Test} alt="loading..." />
+        <TermoImg src={Desafio} alt="loading..." />
 
         <TextPattern>
           4 - A próxima página é de regulamento, onde você pode entender como o
           programa de fidelidade funciona
         </TextPattern>
 
-        <img src={Test} alt="loading..." />
+        <img src={Regulamento} alt="loading..." />
 
         <TextPattern>
           5 - A próxima página é de Termos de uso, onde você pode ver as regras
           do programa de fidelidade
         </TextPattern>
 
-        <img src={Test} alt="loading..." />
+        <TermoImg src={Termos} alt="loading..." />
       </BoxAll>
     </Main>
   );
