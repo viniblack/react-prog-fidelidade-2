@@ -48,3 +48,8 @@ body,
 .MuiButton-containedPrimary:hover {
   background-color: #05ed14a6 !important;
 }
+
+.testee {
+  padding: .5rem;
+  resize: none
+}

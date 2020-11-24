@@ -30,10 +30,10 @@ export default function ChallengeBox() {
   // eslint-disable-next-line no-unused-vars
   const classes = useStyles();
   return (
-    <Main>
+    <Main top="6rem">
       <FieldSearch />
       <SectionTitle>Desafios </SectionTitle>
-      <BoxAll marginBottom="1rem">
+      <BoxAll marginBottom="1rem" paddingTop="1rem" paddingBottom="1rem">
         <BoxChallenge>
           <AnswerWin />
         </BoxChallenge>

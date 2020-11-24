@@ -6,6 +6,7 @@ import Banner from '../../assets/img/banner2.png';
 import {
   BoxAll,
   SectionTitle,
+  Main,
 
 } from '../../styles/pattern/box-all';
 
@@ -15,11 +16,11 @@ import '../../styles/awards/awards.css';
 
 export default function AwardsBox() {
   return (
-    <>
+    <Main>
       <img className="banner" src={Banner} alt="banner" />
       <FieldSearch />
       <SectionTitle>Prêmios </SectionTitle>
-      <BoxAll display="flex" flexDirection="column" marginBottom="4rem">
+      <BoxAll display="flex" flexDirection="column" margin="1rem" marginBottom="100px" color="white" paddingBottom="2rem">
         <AwardsRedemption />
         <AwardsRedemption />
         <AwardsRedemption />
@@ -27,6 +28,6 @@ export default function AwardsBox() {
         <AwardsRedemption />
         <AwardsRedemption />
       </BoxAll>
-    </>
+    </Main>
   );
 }

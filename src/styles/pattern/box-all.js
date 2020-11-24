@@ -13,6 +13,7 @@ const BoxAll = styled.div((props) => ({
   borderRadius: '10px',
   marginBottom: props.marginBottom,
   paddingTop: props.paddingTop,
+  paddingBottom: props.paddingBottom,
   margin: props.margin,
   display: props.display,
   flexDirection: props.flexDirection,

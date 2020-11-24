@@ -36,6 +36,9 @@ const useStyles = makeStyles(() => ({
     height: 0,
     paddingTop: '55%', // 16:9
   },
+  AwardsImg: {
+    cursor: 'pointer',
+  },
 }));
 
 export default function RedemptionAwards() {
@@ -53,7 +56,7 @@ export default function RedemptionAwards() {
   return (
     <Box>
       <div>
-        <AwardsImg src={Batata} alt="Prêmio" onClick={handleOpen} />
+        <AwardsImg src={Batata} alt="Prêmio" onClick={handleOpen} className={classes.AwardsImg} />
 
         <Modal
           aria-labelledby="transition-modal-title"

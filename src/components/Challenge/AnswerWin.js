@@ -30,13 +30,12 @@ const NoteNumber = [
 ];
 
 const useStyles = makeStyles({
-  test: {
+  color: {
     background: '#00FF19',
     '&:hover': {
       background: '#00FF19',
     },
   },
-
 });
 
 export default function AnswerWin() {
@@ -61,10 +60,12 @@ export default function AnswerWin() {
       </NoteBox>
       <TextareaAutosize
         rowsMin={5}
+        rowsMax={5}
         aria-label="maximum height"
         placeholder="Escreva em poucas palavras o motivo de sua nota..."
+        className="testee"
       />
-      <Button variant="contained" color="primary" size="small" classes={{ root: classes.test }}>
+      <Button variant="contained" color="primary" size="small" classes={{ root: classes.color }}>
         <DoneIcon />
         Enviar
       </Button>
