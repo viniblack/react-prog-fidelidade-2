@@ -13,6 +13,7 @@ import HowItWorks from './pages/HowItWorks';
 import Regulation from './pages/Regulation';
 import Search from './pages/Search';
 import TermsUse from './pages/TermsUse';
+import Test from './pages/Test';
 
 const Routers = () => (
   <Switch>
@@ -24,6 +25,7 @@ const Routers = () => (
     <Route path="/regulamento" component={Regulation} />
     <Route path="/termosdeuso" component={TermsUse} />
     <Route path="/byfidelizarmais" component={ByFidelizarMais} />
+    <Route path="/test" component={Test} />
     <Route component={() => <div>Page 404!</div>} />
   </Switch>
 );

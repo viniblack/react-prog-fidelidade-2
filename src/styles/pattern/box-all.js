@@ -3,7 +3,7 @@ import styled from 'styled-components';
 const Main = styled.div((props) => ({
   alignItems: 'center',
   justifyContent: 'center',
-  paddingBottom: '2rem',
+  paddingBottom: props.paddingBottom,
   position: 'relative',
   top: props.top,
   marginBottom: props.marginBottom,
@@ -93,5 +93,5 @@ const TermoImg = styled.img`
 export {
   BoxAll, Main, SectionTitle, TextPattern, Fidelizar,
   LogoFidelizar, FidelizarLink, ListOl, ListLi, Img,
-  ListUl,TermoImg
+  ListUl,TermoImg,
 };

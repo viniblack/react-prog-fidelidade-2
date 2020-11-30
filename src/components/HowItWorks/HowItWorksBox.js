@@ -20,7 +20,7 @@ import Termos from '../../assets/img/howItWorks/7.jpg';
 
 export default function HowItWorksBox() {
   return (
-    <Main marginBottom="2rem" top="4rem">
+    <Main marginBottom="2rem" top="4rem" paddingBottom="2.5rem">
       <SectionTitle>Como Funciona</SectionTitle>
       <BoxAll
         flexDirection="column"

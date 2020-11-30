@@ -12,7 +12,7 @@ import {
 
 export default function PageExtract() {
   return (
-    <Main top="6rem">
+    <Main top="6rem" paddingBottom="2rem">
       <FieldSearch />
       <SectionTitle>Extrato </SectionTitle>
       <BoxAll margin="1rem" padding="1rem" color="white">
