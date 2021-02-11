@@ -1,56 +1,68 @@
-This project was bootstrapped with Create React App.
+<h1 align="center">
+  Versão em React do programa de fidelidade
+</h1>
 
-Available Scripts
-In the project directory, you can run:
+<p align="center"> Projeto para práticar os conhecimentos em ReactJs</p>
 
-npm start
-Runs the app in the development mode.
-Open http://localhost:3000 to view it in the browser.
+<h4 align="center"> 
+	🚧 Em construção...  🚧
+</h4>
 
-The page will reload if you make edits.
-You will also see any lint errors in the console.
+## 🎨 Layout
 
-npm test
-Launches the test runner in the interactive watch mode.
-See the section about running tests for more information.
+<h1 align="center">
+  <img alt="botao-programa-fidelidade" title="#botao-programa-fidelidade" src="./assets/fidelizar.GIF" />
+</h1>
 
-npm run build
-Builds the app for production to the build folder.
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🚀 Como executar o projeto
 
-The build is minified and the filenames include the hashes.
-Your app is ready to be deployed!
+### Pré-requisitos
 
-See the section about deployment for more information.
+Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
 
-npm run eject
-Note: this is a one-way operation. Once you eject, you can’t go back!
+[Git](https://git-scm.com), [Node.js](https://nodejs.org/en/), [Styled-Components](https://styled-components.com/). Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
 
-If you aren’t satisfied with the build tool and configuration choices, you can eject at any time. This command will remove the single build dependency from your project.
+```bash
+# Clone este repositório
+$ git clone https://github.com/viniblack/react-prog-fidelidade-2
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except eject will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+# Instale as dependências
+$ npm install
 
-You don’t have to ever use eject. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+# Execute a aplicação 
+$ npm start
 
-Learn More
-You can learn more in the Create React App documentation.
+# O servidor inciará na porta:3000 - acesse http://localhost:3000/
+```
+---
 
-To learn React, check out the React documentation.
+### 🛠 Tecnologias
 
-Code Splitting
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+As seguintes ferramentas foram usadas na construção do projeto:
 
-Analyzing the Bundle Size
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+- [Node.js](https://nodejs.org/en/)
+- [React](https://pt-br.reactjs.org/)
+- [Styled-components](https://styled-components.com/)
 
-Making a Progressive Web App
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+---
 
-Advanced Configuration
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+### Autor
 
-Deployment
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+<a href="https://github.com/viniblack">
+ <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/51183682?s=460&u=c1f09414d262ca2e62a855b9406881a3a26b5e84&v=4" width="100px;" alt=""/>
+ <br />
+ <sub><b>Vini Black</b></sub></a> <a href="https://github.com/viniblack" title="GitHub">👨‍💻 🚀 🖤</a>
 
-npm run build fails to minify
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+[![Twitter Badge](https://img.shields.io/badge/-@BlackVinii-1ca0f1?style=flat-square&labelColor=1ca0f1&logo=twitter&logoColor=white&link=https://twitter.com/BlackVinii)](https://twitter.com/BlackVinii) 
+[![Linkedin Badge](https://img.shields.io/badge/-Vinicius-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/viniblack/)](https://www.linkedin.com/in/viniblack/) 
+[![Gmail Badge](https://img.shields.io/badge/-viniciusslsantana@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:viniciusslsantana@gmail.com)](mailto:viniciusslsantana@gmail.com)
+
+---
+
+## 📝 Licença
+
+Este projeto esta sobe a licença [MIT](./LICENSE).
+
+Feito por Vini Black 👋🏽 [Entre em contato!](https://www.linkedin.com/in/viniblack/)
+
+---
